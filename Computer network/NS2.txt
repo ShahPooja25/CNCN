@@ -39,5 +39,12 @@ close $nf
 exec nam out.nam &
 exit 0
 }
+
+
+
 # Run the simulation
-$ns run
+sudo apt update
+sudo apt install ns2 nam -y
+nano simulation.tcl
+ns simulation.tcl
+nam out.nam
