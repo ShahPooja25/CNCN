@@ -43,4 +43,11 @@ $ns at 3.2 "$ns trace-annotate \"send packet 3\""
 $ns at 3.5 "$ns trace-annotate \"receive ack 3\""
 $ns at 3.8 "$ns trace-annotate \"send packet 4\""
 $ns at 4.0 "finish"
+
+to run
 $ns run
+nano tcp_simulation.tcl
+sudo apt update
+sudo apt install ns2 nam -y
+ns tcp_simulation.tcl
+nam out.nam
