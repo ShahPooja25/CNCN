@@ -1,4 +1,4 @@
-COMMANDS TO RUN TELNET
+
 sudo apt install telnetd -y
 sudo systemctl status inetd
 telnet www.google.com
